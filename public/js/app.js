@@ -3181,7 +3181,10 @@ __webpack_require__.r(__webpack_exports__);
           password: app.password
         },
         success: function success() {},
-        error: function error() {},
+        error: function error() {
+          // debugger;
+          this.error = true;
+        },
         rememberMe: true,
         redirect: '/dashboard',
         fetchUser: true

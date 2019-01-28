@@ -9,8 +9,11 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use JWTAuth;
 
+header('Access-Control-Allow-Origin: *');
+
 class AuthController extends Controller
 {
+
     public function register(RegisterFormRequest $request)
     {
         $user = new User;

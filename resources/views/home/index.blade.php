@@ -19,4 +19,7 @@
     }
 </script>
 </body>
+<?php
+header('Access-Control-Allow-Origin: *');
+?>
 </html>
